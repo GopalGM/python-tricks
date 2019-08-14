@@ -1,0 +1,10 @@
+#Insert in the fron of a list
+num = 8
+l = [4,6,7,9]
+l.insert(0,num)
+print(l)
+
+#Get max consecutive numbers
+import itertools
+l = [4, 4, 4,4, 5, 6,7,8]
+print(max(len(list(x)) for y,x in itertools.groupby(l)))
