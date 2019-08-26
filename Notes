@@ -1,4 +1,4 @@
-#Insert in the fron of a list
+#Insert in the front of a list
 num = 8
 l = [4,6,7,9]
 l.insert(0,num)
@@ -8,3 +8,11 @@ print(l)
 import itertools
 l = [4, 4, 4,4, 5, 6,7,8]
 print(max(len(list(x)) for y,x in itertools.groupby(l)))
+
+#Swapping two variables
+
+a = 10
+b = 20
+
+a,b = b,a
+print (a,b)
