@@ -1,18 +1,34 @@
-#Insert in the front of a list
+#==============Insert in the front of a list ==================
 num = 8
 l = [4,6,7,9]
 l.insert(0,num)
 print(l)
 
-#Get max consecutive numbers
+#=========Get max consecutive numbers===================
 import itertools
 l = [4, 4, 4,4, 5, 6,7,8]
 print(max(len(list(x)) for y,x in itertools.groupby(l)))
 
-#Swapping two variables
+#=========Swapping two variables================
 
 a = 10
 b = 20
 
 a,b = b,a
 print (a,b)
+
+#===============Dictionary ======================
+l1 = [3,1,5,2,4,8]
+d = {}
+
+k = list(d.keys()) 
+v = list(d.values())
+
+# get key given value
+print(k[v.index(4)]) 
+
+#Or like this- get key given value
+print(list(d.keys())[list(d.values()).index(4)])
+
+
+
