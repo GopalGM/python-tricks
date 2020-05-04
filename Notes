@@ -30,5 +30,15 @@ print(k[v.index(4)])
 #Or like this- get key given value
 print(list(d.keys())[list(d.values()).index(4)])
 
+#==============Determine Odd or Even number using bitwise operator & ===============
+#since modulous operator comes very costly
+
+num = 348
+
+if num & 1 ==0:
+    print ('Even')
+elif num & 1 ==1:
+    print('Odd')
+
 
 
