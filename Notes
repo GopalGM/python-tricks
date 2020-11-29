@@ -40,5 +40,11 @@ if num & 1 ==0:
 elif num & 1 ==1:
     print('Odd')
 
+#==========Dataframe getting min/max column value min/max columnid =====================
+df['column'].max()
+df['column'].min()
+
+df['column'].idxmax()
+df['column'].idxmin()
 
 
