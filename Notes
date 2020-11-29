@@ -47,4 +47,13 @@ df['column'].min()
 df['column'].idxmax()
 df['column'].idxmin()
 
+#======================Data Frame error ========================================
+if get error like this - Error tokenizing data. C error: Expected 10 fields in line 3, saw 14
+Try this - 
+df = pd.read_csv(filename,error_bad_lines=False)
+
+According to pandas.pydata.org -
+error_bad_lines : bool, default True
+Lines with too many fields (e.g. a csv line with too many commas) will by default cause an exception to be raised, and no DataFrame will be returned. If False, then these “bad lines” will dropped from the DataFrame that is returned.
+
 
