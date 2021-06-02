@@ -1,0 +1,31 @@
+Remove List Items-
+
+1) remove() - to remove specific item
+list = ['a','b','c','d','e']
+list.remove('b')
+print(list)-> ['a', 'c', 'd', 'e']
+
+2) pop(index) - to remove from specified index
+list = ['a','b','c','d','e']
+list.pop(1)
+print(list) -> ['a', 'c', 'd', 'e']
+
+3) pop() - if index is not provided removes the last item
+list = ['a','b','c','d','e']
+list.pop()
+print(list) -> ['a', 'b', 'c', 'd']
+
+4)del - also removes from the specified index
+list = ['a','b','c','d','e']
+del list[1]
+print(list) -> ['a', 'c', 'd', 'e']
+
+5) del - without any index deletes the list completely
+list = ['a','b','c','d','e']
+del list
+print(list) -> <class 'list'>
+
+6)clear() - empties the list
+list = ['a','b','c','d','e']
+list.clear()
+print(list) -> []
