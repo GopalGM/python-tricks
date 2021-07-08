@@ -65,7 +65,7 @@ a + b = [1,2,3,4,5,6]
 a[len(a):] = b => [1,2,3,4,5,6
 a.append(b) = [1,2,3,[4,5,6]]
 
-#============ Zip ti join two tuples together ===============
+#============ Zip to join two tuples together ===============
 a = ('x','y','z')
 b = (1,2,3)
 c = (zip(a,b))
