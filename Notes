@@ -4,12 +4,12 @@ l = [4,6,7,9]
 l.insert(0,num)
 print(l)
 
-#=========Get max consecutive numbers===================
+#========= Get max consecutive numbers===================
 import itertools
 l = [4, 4, 4,4, 5, 6,7,8]
 print(max(len(list(x)) for y,x in itertools.groupby(l)))
 
-#=========Swapping two variables================
+#========= Swapping two variables================
 
 a = 10
 b = 20
@@ -17,7 +17,7 @@ b = 20
 a,b = b,a
 print (a,b)
 
-#===============Dictionary ======================
+#=============== Dictionary get key given value ======================
 l1 = [3,1,5,2,4,8]
 d = {}
 
@@ -30,7 +30,7 @@ print(k[v.index(4)])
 #Or like this- get key given value
 print(list(d.keys())[list(d.values()).index(4)])
 
-#==============Determine Odd or Even number using bitwise operator & ===============
+#============== Determine Odd or Even number using bitwise operator & ===============
 #since modulous operator comes very costly
 
 num = 348
@@ -40,14 +40,14 @@ if num & 1 ==0:
 elif num & 1 ==1:
     print('Odd')
 
-#==========Dataframe getting min/max column value and min/max row index of column value ============
+#========== Dataframe getting min/max column value and min/max row index of column value ============
 df['column'].max()
 df['column'].min()
 
 df['column'].idxmax()
 df['column'].idxmin()
 
-#======================Data Frame error ========================================
+#====================== Data Frame error ========================================
 if get error like this - Error tokenizing data. C error: Expected 10 fields in line 3, saw 14
 Try this - 
 df = pd.read_csv(filename,error_bad_lines=False)
@@ -74,6 +74,9 @@ c = (zip(a,b))
 print(tuple(c)) => (('x', 1), ('y', 2), ('z', 3))
 or
 print(tuple(zip(a,b))) => (('x', 1), ('y', 2), ('z', 3))
-#=======================
+#============ Dividing one list by another list ============
+list1 = [10,18,21,40,45]
+list2 = [5,6,7,8,9]
+print([i/j for i , j in zip(list1,list2)]) ==> [2.0, 3.0, 3.0, 5.0, 5.0]
 
 
